@@ -1,0 +1,161 @@
+<html>
+    <head>
+        <title>Mode of Login</title>
+        <link rel="stylesheet" href="css/style1.css">
+        <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/Bvvwt6TK/cloud.png">
+    </head>
+    <body>
+        <div class="topnav">
+            <h1 id="h1">Supply Chain Managent</h1>
+        </div><br><br>
+         <h2 id="h2" style="margin-left: 100px;margin-top: 200px">Welcome to our web portal!</h2><br>
+        <!-- <h3 id="h3" style="margin-left: 100px">One place to resolve your SLA Violations where you are able to utilize Openstack and Kubernetes cloud services.</h3>
+        <h3 id="h3" style="margin-left: 100px">We designed this web interface where you can see the violated SLA parameters in the form of log files </h3>
+        <h3 id="h3" style="margin-left: 100px">for which the CSP is adhered of. We have used the ethereum private blockchain network to store the log file.</h3> -->
+         <br><br>
+            <div class="container">
+                <center><h1>Select Your Preferred Option</h1></center>
+                <div class="row">
+                    <div class="column">
+                        <form name="myform" align="center" action="/verify" >
+                        <br><br><h3>Verify document</h3><br/>
+                        <button class="btn-login" ><img id="image" src="https://i.postimg.cc/xdCQy6Pc/admin2.png" alt="Avatar"></button>
+                        </form>
+                    </div>
+                    <div class="column">
+                        <form name="myform" align="center" action="/directupload" >
+                        <br/><br/><h3>Upload files</h3><br/>
+                        <button class="btn-login"><img id="image" src="https://i.postimg.cc/3rZNZ4x2/istockphoto-1182976811-612x612.jpg" alt="Avatar"></button><br/>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        <div class="footer">
+             <!-- <form name="myform" align="center" action="/register" >
+            <center><br><h4>New User? <a href="/register" style="color: black; text-decoration: underline;">Sign Up</a></h4></center><br><br>
+        </form> -->
+            <p>&#169 All rights reserved</p>
+        </div>
+    </body>
+</html>
+
+
+
+
+ <!-- <html>
+    <head>
+        <title>Mode of Login</title>
+        <link rel="stylesheet" href="css/style1.css">
+        <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/Bvvwt6TK/cloud.png">
+    </head>
+<body >
+    <div class="container">
+        <center><h2 style="font-size: 40px;"><b> Modal Login Form</b></h2></center>
+        <!-- <br> -->
+        <!-- <br>
+        <div>
+          <p align="center" style="font-size: 30px;">Our website allows you to buy and sell the tangible goods and digital products through online mode which involves Ipfs for uploading images of the products</p>
+        </div>
+        <div class="row">
+            <div class="column">            
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="btn-login1">Login as admin</button>
+            </div>
+            <div class="column">
+                <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;" class="btn-login2">Login as User</button>
+            </div>
+        </div>
+    </div>
+    <style>
+      body {
+        background-image: url(' https://i.postimg.cc/NMJg0L35/shopping-cart-with-wooden-elements.jpg');
+      }
+      </style>
+
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/loginadmin" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img id="image" src="https://i.postimg.cc/xdCQy6Pc/admin2.png" alt="Avatar" class="Avatar">
+
+    </div>
+   
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="pass"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="pass" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+<div id="id02" class="modal">
+  
+  <form class="modal-content animate" action="/login_check" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img id="image" src="https://i.postimg.cc/fWFN773b/user.png" alt="Avatar" class="Avatar">
+    </div>
+   
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="pass"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="pass" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+    <div class="footer">
+        <p>&#169 All rights reserved</p>
+    </div> 
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html> -->
+

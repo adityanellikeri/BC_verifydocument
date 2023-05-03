@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ipfs upload</title>
+    <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/Bvvwt6TK/cloud.png">
+    <link rel="stylesheet" href="css/stylehome.css">
+</head>
+<body>
+    <div class="topnav">
+        <h1 id="h1sla">Document verification</h1>
+    </div>
+    <form action="/verifydocument" method="post" enctype="multipart/form-data">
+        <main>
+            <div class="row">
+                <h1 id="h1">Enter the file id and upload file</h1>
+                <div class="colm-form">
+                    <div class="form-container">
+                    <label>FileID</label>
+                    <input type="number" name="fileid" required>
+                    <br><br>
+                    <label>Filename</label>
+                    <input type="text" name="fileName" required>
+                    <br><br>
+                    <label>Upload file</label>
+                    <input id="browse" type="file" name="file">
+                    <br><br>
+                    <input type="submit" class="btn-login" value="submit">
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <p>&#169 All rights reserved</p>
+            </div>  
+        </main>
+    </form>
+</body>
+</html>
